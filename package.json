@@ -1,0 +1,31 @@
+{
+  "name": "visioncine-api",
+  "version": "3.0.0",
+  "description": "API para scraping do VisionCine com bypass Cloudflare",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:cloudflare": "node server-cloudflare.js",
+    "start:puppeteer": "node server-puppeteer.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["visioncine", "api", "scraper", "cloudflare", "bypass"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0",
+    "cloudscraper": "^4.6.0"
+  },
+  "optionalDependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
